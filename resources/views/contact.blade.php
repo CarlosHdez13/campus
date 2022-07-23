@@ -1,12 +1,17 @@
-@extends('layouts.base_campus')
-@section('tittle', 'Contact us')
-@section('content')
+@extends('base_campus')
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Contact us Page Container</h1>
-        </div>
-    </div>
-</div>
+@section('title', 'Usuarios')
+
+@section('content')
+    <h1>titulo</h1>
+
+    <ul>
+            <li>holi</li>
+    </ul>
+@endsection
+
+@section('sidebar')
+    @parent
+
+    <h2>Barra lateral personalizada!</h2>
 @endsection

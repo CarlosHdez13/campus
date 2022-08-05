@@ -6,7 +6,7 @@
   }
 </style>
 @section('content')
-  <div class="medio">
+  <!-- <div class="medio"> -->
     <div class="titulosPrincipales  mt-29">
       <div class="col-12">
         <span class="tema">Tema Actual: <span  class="nombreTema">Ideación</span></span>
@@ -54,21 +54,39 @@
     </div>
     <div class="row" style="width:100%;">
       <div class="col-5">
-        <a href="" style="text-decoration: none;"><span class="tema-anterior">Tema Anterior</span></a>
+        <span class="tema-anterior">
+          <a href="{{ ('../inicio_tema') }}" style="text-decoration: none;display: flex; color: #f6921e;">
+            <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-right: 5px">
+              <img src="{{ asset('img/iconos/flecha_naranja_izquierda.png') }}" height="11px" width="11px">
+            </div>
+          </a>
+          Tema Anterior</span>
       </div>
       <div class="col-5">
-        <a href="" style="text-decoration: none;"><span class=" tema-siguiente">Tema Siguiente</span></a>
+        <span class="tema-siguiente">
+          <a href="{{ ('../ideacion') }}" style="text-decoration: none;display: flex; color: #f6921e;">Tema Siguiente
+            <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-left: 5px;">
+              <img src="{{ asset('img/iconos/flecha_naranja_derecha.png') }}" height="6px" width="6px">
+            </div>
+          </a>
+        </span>
       </div>
-      <div class="col-2 botones">
-        <button class="btn btn-primary">
-          <span class="">Guardar</span>
-        </button>
+      <div class="col-2 ">
+        <div class="botones">
+          <button class="btn btn-primary">
+            <span style="display: flex;">GUARDAR
+              <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-left: 5px;">
+                <img src="{{ asset('img/iconos/flecha_blanca_derecha.png') }}" height="6px" width="6px">
+              </div>
+            </span>
+          </button>
+        </div>
       </div>
     </div>
     <div>
       <textarea style="background: #eff3f6;width: 100%;height: 132px;margin-top: 51px;margin-bottom: 86px;border: none;" placeholder="NOTAS DEL USUARIO"></textarea>
     </div>
-  </div>
+  <!-- </div> -->
           
   <script>
     $.ajaxSetup({

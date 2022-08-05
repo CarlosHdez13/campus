@@ -6,7 +6,7 @@
   }
 </style>
 @section('content')
-  <div class="medio">
+  <!-- <div class="medio"> -->
     <div class="titulosPrincipales  mt-29">
       <div class="col-12">
         <span class="tema">Tema Actual: <span  class="nombreTema">Ideación</span></span>
@@ -29,15 +29,18 @@
         </a>
       </li>
     </ul>
-    <div class="tab-content" id="contenido" style="width: 100%;height: 393px;margin-top: 30px;">
-      <!-- <div id="compra"  aria-labelledby="compra-tab">
-        <h1>Ideacion</h1>
-      </div> -->
+    <div class="tab-content" id="contenido" style="width: 100%;height: 500px;margin-top: 30px;">
       <div  class="tab-pane fade show in" id="presentacion" role ="tabpanel" aria-labelledby="compra-tab">
-        <h1>Ideacion</h1>
+        <div style="text-align: center;">
+          <img src="{{ asset('img/recursos/img_tema_presentacion.png') }}" alt="" responsive="responsive" height="511" width="681">
+        </div>
       </div>
       <div class="tab-pane fade show" id="preguntas" role ="tabpanel" aria-labelledby="compra-tab">
-        <div class="row">
+        <div style="text-align: center;">
+          <img src="{{ asset('img/recursos/img_tema_cuestionario.png') }}" alt="" responsive="responsive" height="379" width="879">
+        </div>
+        <!-- aqui deberia de ir el cuestionario  -->
+        <!-- <div class="row">
           <div class="col-12">
             <span class="nombre-SubTema">CUESTIONARIO DE CONOCIMIENTO</span><br><br>
             <span style="font-size: 12px;font-family: 'Lato', sans-serif;font-weight: 400;color: #1f2d35;">
@@ -90,44 +93,56 @@
                     <td colspan="5"><input type="range" class="form-range" min="0" max="2"  step="0.5" id="customRange3"></td>
                   </tr>
               </table>
-              
             </div>
-            <!-- <div style="text-align: center; margin-bottom: 74px; margin-top: 133px;">
-                <img src="{{ asset('img/iconos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="504" width="574">
-            </div> -->
-            
-            <!-- <div class="row" style="width:100%;">
-              <div class="col-6">
-                <a href="" style="text-decoration: none;"><span class="tema-anterior">Tema Anterior</span></a>
-              </div>
-              <div class="col-6"  style="margin-bottom: 86px;">
-                <a href="" style="text-decoration: none;"><span class=" tema-siguiente">Tema Siguiente</span></a>
-              </div>
-            
-            </div> -->
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="tab-pane fade show" id="radar" role ="tabpanel" aria-labelledby="compra-tab">
-        <h1>Radar</h1>
+        <div style="text-align: center;">
+          <img src="{{ asset('img/recursos/img_tema_radar.png') }}" alt="" responsive="responsive" height="379" width="879">
+        </div>
       </div>
     </div>
     <div class="row" style="width:100%;">
-      <div class="col-5">
-        <a href="" style="text-decoration: none;"><span class="tema-anterior">Tema Anterior</span></a>
+      <div class="col-4">
+        <span class="tema-anterior">
+          <a href="{{ ('../hoja_ruta') }}" style="text-decoration: none;display: flex; color: #f6921e;">
+            <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-right: 5px">
+              <img src="{{ asset('img/iconos/flecha_naranja_izquierda.png') }}" height="6px" width="6px">
+            </div>
+          
+          Tema Anterior</span></a>
       </div>
-      <div class="col-2 botones">
+      <div class="col-4 botones">
         <button class="btn btn-primary">
           <span class="">REPRODUCIR AUDIO</span>
         </button>
       </div>
-      <div class="col-5">
-        <a href="" style="text-decoration: none;"><span class=" tema-siguiente">Tema Siguiente</span></a>
+      <div class="col-4" style="margin-bottom: 86px;">
+        <span class="tema-siguiente">
+          <a href="{{ ('../ideacion') }}" style="text-decoration: none;display: flex; color: #f6921e;">Tema Siguiente
+            <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-left: 5px;">
+              <img src="{{ asset('img/iconos/flecha_naranja_derecha.png') }}" height="6px" width="6px">
+            </div>
+          </a>
+        </span>
       </div>
-    </div>
+     
+      <!-- <div class="col-4">
+        <a href="{{ ('../hoja_ruta') }}" style="text-decoration: none;"><span class="tema-anterior">Tema Anterior</span></a>
+      </div>
+      <div class="col-4 botones">
+        <button class="btn btn-primary">
+          <span class="">REPRODUCIR AUDIO</span>
+        </button>
+      </div>
+      <div class="col-4">
+        <a href="{{ ('../ideacion') }}" style="text-decoration: none;"><span class=" tema-siguiente">Tema Siguiente</span></a>
+      </div>
+    </div> -->
     <div>
       <textarea style="background: #ebe9e9;width: 100%;height: 132px;margin-top: 51px;margin-bottom: 86px;border: none;" placeholder="NOTAS DEL USUARIO"></textarea>
     </div>
-  </div>
+  <!-- </div> -->
             
 @endsection

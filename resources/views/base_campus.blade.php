@@ -49,6 +49,9 @@
             line-height: 30px;
             background: #0E191E;
             left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .img-cabecera2{
             vertical-align: text-top;
@@ -58,13 +61,13 @@
             margin-right: 0px !important;
         }
         .icono_campus{
-            margin-top: 21px;
+            /* margin-top: 21px; */
             margin-left: 50px;
-            margin-bottom: 21px;
+            /* margin-bottom: 21px; */
         }
         .barra{
-            width: 55%;
-            margin-left: 15%;
+            width: 30%;
+            margin-left: 30%;
         }
         .texto-barra{
             font-size: 11px;
@@ -135,10 +138,11 @@
             color: #1f2d35;
         }
         .nombre-SubTema{
-            font-size: 11px;
+            font-size: 14px;
             font-family: 'Lato', sans-serif;
             font-weight: 900;
             color: #1f2d35;
+            letter-spacing: 2px;
         }
         .temaTitulo{
             font-size: 15px;
@@ -150,7 +154,8 @@
             left: 0;
         }
         .medio{
-            margin: 0px 51px 10px 30px;
+            /* margin: 0px 51px 10px 30px; */
+            width: 1024px; margin: 0 auto;
         }
         .cabeceras{
             font-size: 13px;
@@ -186,6 +191,7 @@
             color: #ffffff;
             background-color: #f6921e;
             border-color: #f6921e;
+            border-radius: 0px;
         }
         .botones{
             height: 51px;
@@ -199,59 +205,80 @@
 	</style>
 </head>
 <body>
-    <header>
-        <div class="text-bg-dark primerHeader">
-            <img class="img-cabecera1" src="{{ asset('img/recursos/logo_siembra_gris.png') }}" alt="" height="" width="">
-        </div>
-        <div class="border-bottom segundoHeader">
-            <div class=" d-flex flex-wrap justify-content-center">
-                <div class="row" style="width: 100%;">
-                    <div class="col-md-4">
-
-                        <div class="icono_campus">
-
-                            <img class="img-cabecera2" src="{{ asset('img/recursos/icono_campus_emprendedor.png') }}" alt="" height="" width="">
-                        </div>
+    
+        <header>
+            <div class="text-bg-dark primerHeader">
+                <img class="img-cabecera1" src="{{ asset('img/recursos/logo_siembra_gris.png') }}" alt="" height="" width="">
+            </div>
+            <div class="border-bottom segundoHeader">
+                <div class="medio" style="display: flex; align-items: center;">
+                    <div class="icono_campus">
+                        <img class="img-cabecera2" src="{{ asset('img/recursos/icono_campus_emprendedor.png') }}" alt="" height="" width="">
                     </div>
-                    <div class="col-md-5">
-
-                        <div class="barra">
-                            <span class="texto-barra">Tu progreso</span>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                </div>
+                    <div class="barra">
+                        <span class="texto-barra">Tu progreso</span>
+                        <div class="progress">
+                            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                             </div>
-                            <span class="texto-barra">20%</span>
-
                         </div>
+                        <span class="texto-barra">20%</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+            <!-- <div class="border-bottom segundoHeader">
+                <div class="medio">
+                    <div class=" d-flex flex-wrap justify-content-center">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-md-4">
 
-    <!-- Begin page content -->
-    <!-- <main role="main" class="container"> -->
-    <main role="main">
-        <div class="row">
-            <div class="col-11">
-                @yield('content')
-            </div>
-            <div class="col-1">
-                @section('sidebar')
-                    <div class="col-12 notificacion">
-                        <img src="{{ asset('img/iconos/icono_notificacion_naranja.png') }}" alt="" height="30" width="30" >
+                                <div class="icono_campus">
+
+                                    <img class="img-cabecera2" src="{{ asset('img/recursos/icono_campus_emprendedor.png') }}" alt="" height="" width="">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+
+                                <div class="barra">
+                                    <span class="texto-barra">Tu progreso</span>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        </div>
+                                    </div>
+                                    <span class="texto-barra">20%</span>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                @show
+                </div>
+            </div> -->
+        </header>
+    <div class="medio">
+        <!-- Begin page content -->
+        <!-- <main role="main" class="container"> -->
+        <main role="main">
+            <div class="row">
+                <div class="col-11">
+                    @yield('content')
+                </div>
+                <div class="col-1">
+                    @section('sidebar')
+                        <div class="col-12 notificacion">
+                            <img src="{{ asset('img/iconos/icono_notificacion_naranja.png') }}" alt="" height="30" width="30" >
+                        </div>
+                    @show
+                </div>
             </div>
-        </div>
         
         </main>
+    </div>
         <!-- <footer class="footer"> -->
-        <footer class="footer">
+        <footer class="">
             <div class="pieNaranja"></div>
             <div class="pie">
-                <img class="img-footer" src="{{ asset('img/recursos/logo_liga_empresarios_2.png') }}" alt="" height="55px" width=""><span class="texto-footer">Derechos reservados 2022 </span>
+                <div class="medio">
+                    <img class="img-footer" src="{{ asset('img/recursos/logo_liga_empresarios_2.png') }}" alt="" height="55px" width=""><span class="texto-footer">Derechos reservados 2022 </span>
+                </div>
             </div>
         </footer>
 

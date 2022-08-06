@@ -35,21 +35,31 @@
         </a>
         </li>
     </ul>
-    <div class="tab-content" id="contenido" style="width: 100%;height: 393px;margin-top: 30px;">
+    <div class="tab-content" id="contenido" style="margin-top: 30px;">
       <!-- <div id="compra"  aria-labelledby="compra-tab">
         <iframe class="responsive-iframe" width="100%" height="393" src="https://www.youtube.com/embed/sOnqjkJTMaA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
       </div> -->
-      <div  class="tab-pane fade show in" id="video" role ="tabpanel" aria-labelledby="compra-tab">
-        <iframe class="responsive-iframe" width="100%" height="393" src="https://www.youtube.com/embed/sOnqjkJTMaA" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+      <div  class="tab-pane fade show  in active" id="video" role ="tabpanel" aria-labelledby="compra-tab">
+        <!-- <iframe class="responsive-iframe" width="100%" height="393" src="https://www.youtube.com/embed/sOnqjkJTMaA" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
+        <div style="text-align: center;">
+          <!-- <img src="{{ asset('img/recursos/img_tema_ideacion_presentacion.png') }}" alt="" responsive="responsive" height="511" width="681"> -->
+          <img src="{{ asset('img/recursos/img_tema_ideacion_presentacion.png') }}" alt="" responsive="responsive" height="" width="100%">
+        </div>
       </div>
       <div class="tab-pane fade show" id="mapa" role ="tabpanel" aria-labelledby="compra-tab">
-        <h1>mapa</h1>
+        <div style="text-align: center;">
+          <img src="{{ asset('img/recursos/img_mapa_visual_ideacion_enfoque.png') }}" alt="" responsive="responsive" height="" width="100%">
+        </div>
       </div>
       <div class="tab-pane fade show" id="ejemplo" role ="tabpanel" aria-labelledby="compra-tab">
-        <h1>ejemplo</h1>
+        <div style="text-align: center;">
+          <img src="{{ asset('img/recursos/img_ejemplo_ideacion_enfoque.png') }}" alt="" responsive="responsive" height="" width="100%">
+        </div>
       </div>
       <div class="tab-pane fade show" id="ejercicio" role ="tabpanel" aria-labelledby="compra-tab">
-        <h1>ejercicio</h1>
+        <div style="text-align: center;">
+          <img src="{{ asset('img/recursos/img_ejercicio_ideacion_enfoque.png') }}" alt="" responsive="responsive" height="" width="100%">
+        </div>
       </div>
     </div>
     <div class="row" style="width:100%;">
@@ -57,10 +67,11 @@
         <span class="tema-anterior">
           <a href="{{ ('../inicio_tema') }}" style="text-decoration: none;display: flex; color: #f6921e;">
             <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-right: 5px">
-              <img src="{{ asset('img/iconos/flecha_naranja_izquierda.png') }}" height="11px" width="11px">
+              <img src="{{ asset('img/iconos/flecha_naranja_izquierda.png') }}" height="6px" width="6px">
             </div>
+            Tema Anterior
           </a>
-          Tema Anterior</span>
+        </span>
       </div>
       <div class="col-5">
         <span class="tema-siguiente">
@@ -72,7 +83,7 @@
         </span>
       </div>
       <div class="col-2 ">
-        <div class="botones">
+        <div class="botones" style="justify-content: right;">
           <button class="btn btn-primary">
             <span style="display: flex;">GUARDAR
               <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-left: 5px;">

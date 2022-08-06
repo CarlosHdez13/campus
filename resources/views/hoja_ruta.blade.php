@@ -17,7 +17,7 @@
             <button class="btn btn-primary">
               <span style="display: flex;">RETOMAR CURSO
                 <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-left: 5px;">
-                  <img src="{{ asset('img/iconos/flecha_blanca_derecha.png') }}" height="11px" width="11px">
+                  <img src="{{ asset('img/iconos/flecha_blanca_derecha.png') }}" height="6px" width="6px">
                 </div>
               </span>
             </button>
@@ -44,10 +44,11 @@
           decisiones en beneficio de tu idea de negocio.
         </span>
         <div style="text-align: center; margin-bottom: 74px; margin-top: 133px;">
-            <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="504" width="574">
+            <!-- <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="504" width="574"> -->
+            <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="" width="100%">
         </div>
         
-        <div class="row" style="width:100%;">
+        <div class="row" style="width:100%; margin-bottom: 86px;">
           <div class="col-6">
             <span class="tema-anterior">
               <a href="{{ ('../hoja_ruta') }}" style="text-decoration: none;display: flex; color: #f6921e;">
@@ -57,7 +58,7 @@
               
               Tema Anterior</span></a>
           </div>
-          <div class="col-6" style="margin-bottom: 86px;">
+          <div class="col-6">
             <span class="tema-siguiente">
               <a href="{{ ('../inicio_tema') }}" style="text-decoration: none;display: flex; color: #f6921e;">Tema Siguiente
                 <div style="text-align: center;display: flex;justify-content: left;align-items: center; margin-left: 5px;">

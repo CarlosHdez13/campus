@@ -28,24 +28,26 @@
     <Hr></Hr>
     <div class="row">
       <div class="col-12">
-        <span class="nombre-SubTema">EXPLICACIÓN</span><br>
-        <span style="font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 900;color: #1f2d35;">
-          Siembra tu idea 
-        </span>
-        <span style="font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 400;color: #1f2d35;">
-          es una metodología que integra en un proceso de formación empresarial el
-        </span>
-        <span style="font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 900;color: #1f2d35;">
-          "Know How"
-        </span>
-        <span style="font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 400;color: #1f2d35;">
-          , por medio de la Transferencia del Conocimiento, siendo funcional en cualquier etapa de tu negocio; 
-          en el que podrás obtener resultados en el menor tiempo posible, para que seas capaz de tomar las mejores 
-          decisiones en beneficio de tu idea de negocio.
-        </span>
-        <div style="text-align: center; margin-bottom: 74px; margin-top: 133px;">
-            <!-- <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="504" width="574"> -->
-            <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="" width="100%">
+        <div class="tab-content" id="contenido" style="margin-top: 30px;">
+          <span class="nombre-SubTema">EXPLICACIÓN</span><br>
+          <span style="font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 900;color: #1f2d35;">
+            Siembra tu idea 
+          </span>
+          <span style="font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 400;color: #1f2d35;">
+            es una metodología que integra en un proceso de formación empresarial el
+          </span>
+          <span style="font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 900;color: #1f2d35;">
+            "Know How"
+          </span>
+          <span style="font-size: 14px;font-family: 'Lato', sans-serif;font-weight: 400;color: #1f2d35;">
+            , por medio de la Transferencia del Conocimiento, siendo funcional en cualquier etapa de tu negocio; 
+            en el que podrás obtener resultados en el menor tiempo posible, para que seas capaz de tomar las mejores 
+            decisiones en beneficio de tu idea de negocio.
+          </span>
+          <div style="text-align: center; margin-bottom: 74px; margin-top: 133px;">
+              <!-- <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="504" width="574"> -->
+              <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="" width="58%">
+          </div>
         </div>
         
         <div class="row" style="width:100%; margin-bottom: 86px;">

@@ -204,6 +204,18 @@
             color: #f6921e;
             align-items: center;
         }
+        .boton-notificacion{
+            border: none;
+            color: #ffffff;
+            background-color: #fff;
+        }
+        .complemento-notifi{
+            font-size: 11px;
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
+            color: #1f2d35;
+            letter-spacing: 2px;
+        }
         /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); */
 	</style>
 </head>
@@ -228,54 +240,45 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="border-bottom segundoHeader">
-                <div class="medio">
-                    <div class=" d-flex flex-wrap justify-content-center">
-                        <div class="row" style="width: 100%;">
-                            <div class="col-md-4">
-
-                                <div class="icono_campus">
-
-                                    <img class="img-cabecera2" src="{{ asset('img/recursos/icono_campus_emprendedor.png') }}" alt="" height="" width="">
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-
-                                <div class="barra">
-                                    <span class="texto-barra">Tu progreso</span>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                        </div>
-                                    </div>
-                                    <span class="texto-barra">20%</span>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </header>
     <div class="medio">
-        <!-- Begin page content -->
-        <!-- <main role="main" class="container"> -->
         <main role="main">
             <div class="row">
-                <div class="col-11">
+                <div class="col-11 trabajoArea">
                     @yield('content')
                 </div>
-                <div class="col-1">
+                <div class="col-1 avisoNotificacion">
                     @section('sidebar')
-                        <div class="col-12 notificacion">
-                            <img src="{{ asset('img/iconos/icono_notificacion_naranja.png') }}" alt="" height="30" width="30" >
+                        <div class="col-12 notificacion" id="notifiNaranja">
+                            <button class="boton-notificacion" onclick="mostrarNotificacion()">
+                                <img src="{{ asset('img/iconos/icono_notificacion_naranja.png') }}" alt="" height="30" width="30" >
+                            </button>
+                        </div>
+                        <div class="col-12 notificacion" id="notifiGris" style="text-align: center;">
+                            <button class="boton-notificacion" onclick="ocultarNotificacion()">
+                                <img src="{{ asset('img/iconos/icono_notificacion_oscuro.png') }}" alt="" height="16" width="16" ><span class="complemento-notifi"> NOTIFICACIONES</span>
+                            </button>
+
+                            <div>
+                                <textarea style="background: #ebe9e9;width: 100%;height: 158px;margin-top: 51px;margin-bottom: 86px;border: none;" placeholder="Nivel de Riesgo:">
+Nivel de Riesgo:
+Medio
+
+Atención Adquirida:
+Asesoría
+                                </textarea>
+                            </div>
+                            <div>
+                            <img src="{{ asset('img/iconos/icono_notificacion_oscuro.png') }}" alt="" height="16" width="16" ><span class="complemento-notifi"> TIPS</span>
+                                <textarea style="background: #ebe9e9;width: 100%;height: 218px;margin-top: 51px;margin-bottom: 86px;border: none;" placeholder="Nivel de Riesgo:">
+                                </textarea>
+                            </div>
                         </div>
                     @show
                 </div>
             </div>
-        
         </main>
     </div>
-        <!-- <footer class="footer"> -->
         <footer class="">
             <div class="pieNaranja"></div>
             <div class="pie">
@@ -294,6 +297,36 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+            $('#notifiGris').hide();
+            function mostrarNotificacion() {
+                $(".trabajoArea").removeClass('col-11');
+                $(".trabajoArea").addClass('col-8');
+                
+                $(".avisoNotificacion").removeClass('col-1');
+                $(".avisoNotificacion").addClass('col-4');
 
+                $('#notifiNaranja').hide();
+                $('#notifiGris').show();
+
+            }
+            function ocultarNotificacion() {
+                $(".trabajoArea").removeClass('col-8');
+                $(".trabajoArea").addClass('col-11');
+                
+                $(".avisoNotificacion").removeClass('col-4');
+                $(".avisoNotificacion").addClass('col-1');
+
+                $('#notifiNaranja').show();
+                $('#notifiGris').hide();
+
+            }
+        </script>
 </body>
 </html>

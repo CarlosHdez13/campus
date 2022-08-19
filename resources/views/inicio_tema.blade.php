@@ -34,13 +34,13 @@
       <div  class="tab-pane fade show in active" id="presentacion" role ="tabpanel" aria-labelledby="compra-tab">
         <div style="text-align: center;">
           <!-- <img src="{{ asset('img/recursos/img_tema_presentacion.png') }}" alt="" responsive="responsive" height="511" width="681"> -->
-          <img src="{{ asset('img/recursos/img_tema_presentacion.png') }}" alt="" responsive="responsive" height="" width="100%">
+          <img src="{{ asset('img/recursos/img_tema_presentacion.png') }}" alt="" responsive="responsive" height="" width="70%">
         </div>
       </div>
       <div class="tab-pane fade show" id="preguntas" role ="tabpanel" aria-labelledby="compra-tab">
         <div style="text-align: center;">
           <!-- <img src="{{ asset('img/recursos/img_tema_cuestionario.png') }}" alt="" responsive="responsive" height="379" width="879"> -->
-          <img src="{{ asset('img/recursos/img_tema_cuestionario.png') }}" alt="" responsive="responsive" height="" width="100%">
+          <img src="{{ asset('img/recursos/img_tema_cuestionario.png') }}" alt="" responsive="responsive" height="" width="70%">
         </div>
         <!-- aqui deberia de ir el cuestionario  -->
         <!-- <div class="row">
@@ -103,7 +103,7 @@
       <div class="tab-pane fade show" id="radar" role ="tabpanel" aria-labelledby="compra-tab">
         <div style="text-align: center;">
           <!-- <img src="{{ asset('img/recursos/img_tema_radar.png') }}" alt="" responsive="responsive" height="379" width="879"> -->
-          <img src="{{ asset('img/recursos/img_tema_radar.png') }}" alt="" responsive="responsive" height="" width="100%">
+          <img src="{{ asset('img/recursos/img_tema_radar.png') }}" alt="" responsive="responsive" height="" width="70%">
         </div>
       </div>
     </div>
@@ -140,7 +140,7 @@
             
 @endsection
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script type="text/javascript">
     $.ajaxSetup({
         headers: {
@@ -159,4 +159,4 @@
     // function activaTab(tab){
     //   window.open(tab, "presentacion");
     // };
-</script>
+</script> -->

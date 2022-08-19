@@ -46,7 +46,7 @@
           </span>
           <div style="text-align: center; margin-bottom: 74px; margin-top: 133px;">
               <!-- <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="504" width="574"> -->
-              <img src="{{ asset('img/recursos/ruta_diagrama_enfoque.png') }}" alt="" responsive="responsive" height="" width="58%">
+              <img src="{{ asset('img/recursos/hoja_de_ruta.png') }}" alt="" responsive="responsive" height="" width="58%">
           </div>
         </div>
         

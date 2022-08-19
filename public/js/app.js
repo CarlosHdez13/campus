@@ -938,7 +938,7 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
   \*****************************/
 /***/ (() => {
 
-eval("$(document).ready(function () {\n  alert('primerodf');\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wdWJsaWMvanMvc2NyaXB0LmpzLmpzIiwibmFtZXMiOlsiJCIsImRvY3VtZW50IiwicmVhZHkiLCJhbGVydCJdLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcHVibGljL2pzL3NjcmlwdC5qcz9iMTUyIl0sInNvdXJjZXNDb250ZW50IjpbIiQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCl7XHJcbiAgICBhbGVydCgncHJpbWVyb2RmJyk7XHJcbn0pOyJdLCJtYXBwaW5ncyI6IkFBQUFBLENBQUMsQ0FBQ0MsUUFBRCxDQUFELENBQVlDLEtBQVosQ0FBa0IsWUFBVTtFQUN4QkMsS0FBSyxDQUFDLFdBQUQsQ0FBTDtBQUNILENBRkQifQ==\n//# sourceURL=webpack-internal:///./public/js/script.js\n");
+eval("$(document).ready(function () {\n  console.log(\"ready!\");\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wdWJsaWMvanMvc2NyaXB0LmpzLmpzIiwibmFtZXMiOlsiJCIsImRvY3VtZW50IiwicmVhZHkiLCJjb25zb2xlIiwibG9nIl0sInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9wdWJsaWMvanMvc2NyaXB0LmpzP2IxNTIiXSwic291cmNlc0NvbnRlbnQiOlsiJCggZG9jdW1lbnQgKS5yZWFkeShmdW5jdGlvbigpIHtcclxuICAgIGNvbnNvbGUubG9nKCBcInJlYWR5IVwiICk7XHJcbn0pOyJdLCJtYXBwaW5ncyI6IkFBQUFBLENBQUMsQ0FBRUMsUUFBRixDQUFELENBQWNDLEtBQWQsQ0FBb0IsWUFBVztFQUMzQkMsT0FBTyxDQUFDQyxHQUFSLENBQWEsUUFBYjtBQUNILENBRkQifQ==\n//# sourceURL=webpack-internal:///./public/js/script.js\n");
 
 /***/ }),
 
